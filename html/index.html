@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body >
+    <div class="container">
+      <div class="section left-sec">
+        <h1 class="title">Learn to code by watching others</h1>
+        <p class="paragraph">
+          See how experiences developers solve problems in real-time. Watching
+          scripted tutorials is great, but inderstanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="section right-sec">
+        <div class="container-form">
+          <div class="freetrial">
+            <p class="trial-text">
+              <strong>Try it free 7 days</strong> then $20/mo. thereafter.
+            </p>
+          </div>
+          <div class="form">
+            <form action="" class="formAction" id="formAction">
+              <div class="form-item">
+                <input
+                  type="text"
+                  class="form-control form-input"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <!--ERROR NAME-->
+              <div class="alert-err name-err" id="name-err"></div>
+              <div class="form-item">
+                <input 
+                type="text"
+                class="form-control form-input"
+                id="lastName"
+                placeholder="Last Name"
+                required
+                >
+              </div>
+              <!--ERROR LASTNAME-->
+              <div class="alert-err" id="lastName-err"></div>
+              <div class="form-item">
+                <input
+                  type="email"
+                  class="form-control form-input"
+                  id="email"
+                  placeholder="Email address"
+                  required
+                />
+              </div>
+              <!--ERROR EMAIL-->
+              <div class="email-err alert-err" id="email-err"></div>
+              <div class="form-item">
+                <input
+                  type="password"
+                  class="form-control form-input"
+                  id="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <!--ERROR PASSWORD-->
+              <div class="pass-err alert-err" id="pass-err"></div>
+              <button type="submit" class="btn-action form-item">
+                CLAIM YOUR FREE TRIAL
+              </button>
+            </form>
+            <p class="terms">
+              By clicking the button, you are agreeing to our
+              <strong class="terms-strong">Terms and services</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="..\Javascript\index.js"></script>
+</html>
