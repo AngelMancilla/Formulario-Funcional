@@ -50,7 +50,7 @@ body {
       }
 
       .form {
-        height: 26rem;
+        min-height: 26rem;
         width: 32rem;
         border-radius: 7px;
         background-color: $primary-color;
@@ -76,13 +76,11 @@ body {
                   border: solid 0.5px #5d54a3
                 }
             }
+            .form-error {
+              border: solid 2px #ff6969;
+              color: #ff6969;
+            }
         };
-        .alert-err {
-          font-size: 12px;
-          color: hsl(0, 100%, 65%);
-          text-align: end;
-          margin-right: 8px;
-        }
         .btn-action {
             background-color: #37cc8a;
             width: 25.788rem;
@@ -106,6 +104,14 @@ body {
             }
         }
 
+        .error-container {
+          text-align: end;
+          .error {
+            font-size: 12px;
+            color: #ff6969;
+            text-align: end;
+           }
+        }
       }
       .terms {
         font-size: 10px;

@@ -44,7 +44,7 @@ body {
   padding: 13px;
 }
 .container .right-sec .container-form .form {
-  height: 26rem;
+  min-height: 26rem;
   width: 32rem;
   border-radius: 7px;
   background-color: white;
@@ -69,11 +69,9 @@ body {
 .container .right-sec .container-form .form .form-item .form-input:active {
   border: solid 0.5px #5d54a3;
 }
-.container .right-sec .container-form .form .alert-err {
-  font-size: 12px;
-  color: hsl(0deg, 100%, 65%);
-  text-align: end;
-  margin-right: 8px;
+.container .right-sec .container-form .form .form-item .form-error {
+  border: solid 2px #ff6969;
+  color: #ff6969;
 }
 .container .right-sec .container-form .form .btn-action {
   background-color: #37cc8a;
@@ -94,6 +92,14 @@ body {
   background-color: #1af391;
   box-shadow: 0 3px rgb(45, 173, 115);
   transform: translateY(4px);
+}
+.container .right-sec .container-form .form .error-container {
+  text-align: end;
+}
+.container .right-sec .container-form .form .error-container .error {
+  font-size: 12px;
+  color: #ff6969;
+  text-align: end;
 }
 .container .right-sec .container-form .terms {
   font-size: 10px;

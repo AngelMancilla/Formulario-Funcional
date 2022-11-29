@@ -31,7 +31,7 @@
             </p>
           </div>
           <div class="form">
-            <form action="" class="formAction" id="formAction">
+            <form action="" class="formAction" id="formAction" novalidate>
               <div class="form-item">
                 <input
                   type="text"
@@ -42,7 +42,8 @@
                 />
               </div>
               <!--ERROR NAME-->
-              <div class="alert-err name-err" id="name-err"></div>
+              <div class="error-container"><span class="error" aria-live="polite" id="errorName"></span></div>
+              
               <div class="form-item">
                 <input 
                 type="text"
@@ -53,7 +54,8 @@
                 >
               </div>
               <!--ERROR LASTNAME-->
-              <div class="alert-err" id="lastName-err"></div>
+              <div class="error-container"><span class="error" aria-live="polite" id="errorLastName"></span></div>
+              
               <div class="form-item">
                 <input
                   type="email"
@@ -64,7 +66,8 @@
                 />
               </div>
               <!--ERROR EMAIL-->
-              <div class="email-err alert-err" id="email-err"></div>
+              <div class="error-container"><span class="error" aria-live="polite" id="errorEmail"></span></div>
+              
               <div class="form-item">
                 <input
                   type="password"
@@ -72,10 +75,13 @@
                   id="password"
                   placeholder="Password"
                   required
+                  minlength="8"
+                  maxlength="16"
                 />
               </div>
               <!--ERROR PASSWORD-->
-              <div class="pass-err alert-err" id="pass-err"></div>
+              <div class="error-container"><span class="error" aria-live="polite" id="errorPassword"></span></div>
+              
               <button type="submit" class="btn-action form-item">
                 CLAIM YOUR FREE TRIAL
               </button>
@@ -88,6 +94,9 @@
         </div>
       </div>
     </div>
+    <!-- <template>
+      <svg id="icon-error" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+    </template> -->
   </body>
   <script src="..\Javascript\index.js"></script>
 </html>
