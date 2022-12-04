@@ -125,3 +125,46 @@ body {
     }
   }
 }
+
+@media (max-width: 1318px) {
+  .container {
+    margin-inline: 50px;
+  }
+}
+@media (max-width: 1172px) {
+  .container {
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .right-sec, .left-sec {
+      width: 100%;
+
+      .title {
+        font-size: 2rem;
+      }
+      .paragraph {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    
+    .right-sec, .left-sec {
+      width: 100%;
+
+      .title {
+        font-size: 2rem;
+      }
+      .paragraph {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  
+}

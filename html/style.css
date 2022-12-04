@@ -111,4 +111,39 @@ body {
   color: hsl(0deg, 100%, 74%);
 }
 
+@media (max-width: 1318px) {
+  .container {
+    margin-inline: 50px;
+  }
+}
+@media (max-width: 1172px) {
+  .container {
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .right-sec, .container .left-sec {
+    width: 100%;
+  }
+  .container .right-sec .title, .container .left-sec .title {
+    font-size: 2rem;
+  }
+  .container .right-sec .paragraph, .container .left-sec .paragraph {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .container .right-sec, .container .left-sec {
+    width: 100%;
+  }
+  .container .right-sec .title, .container .left-sec .title {
+    font-size: 2rem;
+  }
+  .container .right-sec .paragraph, .container .left-sec .paragraph {
+    font-size: 0.8rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
